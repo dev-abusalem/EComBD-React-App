@@ -1,0 +1,121 @@
+.main_menu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.hero_overflow{
+    background: rgba(0,0,0,0.5);
+    height: 90vh;
+}
+.hero_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+.hero_left h1{
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    color:#fff;
+}
+.hero_left p{
+    margin-bottom: 10px;
+    color:#fff;
+    letter-spacing: 5px;
+
+}
+.hero_left{
+    flex:1
+}
+.hero_right{
+    flex:1
+}
+.main_category{
+    flex-wrap: wrap;
+    flex: 1;
+    height: 420px;
+}
+.main_category_div{
+    position: relative;
+    transition: 0.3s all ease;
+    height: 100%;
+}
+.main_category_div:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.hidden_part_of_category{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+.main_category_div:hover .hidden_part_of_category{
+    opacity: 1;
+}
+.home_product_sec_design{
+    width: 21.8%;
+    max-height: 475px;
+    display: inline-block;
+}
+.home_product_sec_design_img{
+    max-width: 245px;
+    height: 270px;
+    margin: 0 auto;
+}
+.home_product_sec_design_icons{
+    opacity: 0;
+    transition: 0.3s all ease;
+}
+.home_product_sec_design:hover .home_product_sec_design_icons{
+    opacity: 1;
+}
+.home_page_best_offer_sec{
+    position: relative;
+
+}
+.home_page_best_offer_sec h2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 0.3s all ease;
+
+}
+.home_page_best_offer_sec:hover h2{
+    opacity: 1;
+    top:50%;
+}
+.home_page_best_offer_sec img{
+    width: 600px;
+    height: 432px;
+}
+.home_page_best_offer_sec::before{
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+    bottom:0;
+    left: 0;
+    transition: 0.3s all ease;
+    transform: scale(0.5);
+    opacity: 0;
+}
+.home_page_best_offer_sec:hover::before{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+.hero_overflow_video{
+    background: rgba(0,0,0,0.8);
+    height: 50vh;
+}
+.hero_overflow_video_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
