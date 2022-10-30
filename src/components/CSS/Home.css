@@ -1,6 +1,23 @@
-.main_menu{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background:rgb(148, 45, 62);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: white; 
+    border-radius:20px
+  }
+
+
+
+
+
+
 .hero_overflow{
     background: rgba(0,0,0,0.5);
     height: 90vh;

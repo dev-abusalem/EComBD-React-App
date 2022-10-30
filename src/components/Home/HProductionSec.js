@@ -17,7 +17,12 @@ const singproduct = allproducts.map((product)=>{
       return d.slice(0,num) + ' ...';
 
     }
+   
     
+// const addToCart = () =>{
+    
+// }
+
 
     return(
         <div key={product.id} className='home_product_sec_design border border-rose-200 m-5 rounded overflow-hidden'>

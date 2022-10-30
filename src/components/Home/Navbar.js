@@ -1,7 +1,8 @@
 import React from 'react';
 import {SlHandbag} from 'react-icons/sl';
+import { Link } from 'react-router-dom';
 import {BsHeart} from 'react-icons/bs';
-
+import '../CSS/Navbar.css'
 
 const Navbar = () => {
 
@@ -9,27 +10,27 @@ const Navbar = () => {
     {
       id : 1,
       name : "HOME",
-      link : "#",
+      link : "/",
     },
     {
       id : 2,
       name : "ABOUT",
-      link : "#",
+      link : "/about",
     },
     {
       id : 3,
       name : "SHOP",
-      link : "#",
+      link : "/shop",
     },
     {
       id : 4,
       name : "BLOGS",
-      link : "#",
+      link : "/blogs",
     },
     {
       id : 5,
       name : "CONTACT",
-      link : "#",
+      link : "/contact",
     }
 
   ]
@@ -37,7 +38,7 @@ const Navbar = () => {
 const list =  menuItems.map((item)=>{
       return(
         <li className='px-3' key={item.id} >
-          <a href={item.link}>{item.name}</a>
+          <Link to={item.link}>{item.name}</Link>
         </li>
       )
 })
@@ -58,15 +59,20 @@ const list =  menuItems.map((item)=>{
              </ul>
           </div> 
           <div className='flex'>
-             <a className='mr-1' href='#'>Register</a>
-             <a className='ml-1' href='#'>Login</a>
+             <Link className='mr-1' to='/register'>Register</Link>
+             <Link className='ml-1' to='/login'>Login</Link>
 
 
+            <div className='navbar_cart_bag_icon'>
+              <span className='hover:scale-110 hover:ease-linear	duration-300 cursor-pointer ml-5 text-xl	'>
+                <SlHandbag /> 
+              </span>
+              <p>0</p>
+            </div>
+             
+             
              <span className='hover:scale-110 hover:ease-linear	duration-300 cursor-pointer ml-5 text-xl	'>
-             <SlHandbag />
-             </span>
-             <span className='hover:scale-110 hover:ease-linear	duration-300 cursor-pointer ml-5 text-xl	'>
-             <BsHeart />
+              <BsHeart />
              </span>
           </div> 
           

@@ -1,0 +1,19 @@
+.main_menu{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.navbar_cart_bag_icon{
+    position: relative;
+    margin-top: -27px;
+    margin-left: 10px;
+}
+.navbar_cart_bag_icon p{
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    display: inline-block;
+    padding: 2px 7px;
+    background-color: darkgreen;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 50px;
+}
